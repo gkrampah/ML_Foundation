@@ -38,3 +38,20 @@ This is calculating the error on multiple test splits making the performance met
 
 ## Hyperparameter tuning
 These are parameters we have to tweek ourselves
+
+## Bias and Variance
+Bias is a tendency to miss.
+Variance is a tendency to be inconsistent
+
+There are 3 main sources of model errors:
+1. being wrong - bias. Cause by missing information or overly-simplistic assumptions. Miss real patterns (underfit)
+2. being unstable - variance. Characterize by sensitivity of output to small changes in the input data. Due to overly complex or poorly-fit model
+3. Unavoidable randomness - irreducible error
+
+bias-variance trade-off - model adjustments that decrease bias often increase variance and vice versa. This is similar to complexity trade-off. Finding the best model means finding the right level of complexity.
+
+## Regularization
+Lasso L1 regularization is slower to converge than Ridge L2 regression. Lasso gives a better interpretability but less computationally efficient. Elastic net, an alternative hybrid approach which combines penalties from both Ridge and Lasso regression
+
+## Recursive Feature Elimination (RFE)
+it repeatedly applies the model, measures feature importance and recursively removes less important features
